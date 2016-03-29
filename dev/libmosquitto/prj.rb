@@ -11,8 +11,11 @@ MxxRu::Cpp::dll_target {
 	include_path 'libmosquitto/lib', Mxx_ru::Cpp::Target::OPT_UPSPREAD
 
 	define 'WITH_THREADING'
+	define 'WITH_TLS'
 	define 'libmosquitto_EXPORTS'
 
 	c_sources Dir[ 'libmosquitto/lib/*.c' ]
+
+	lib 'ssl'
 }
 
