@@ -1,7 +1,0 @@
-syntax: glob
-
-.externals
-*.swp
-dev/libmosquitto/lib
-dev/libmosquitto/config.h
-dev/target
